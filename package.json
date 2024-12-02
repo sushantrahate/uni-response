@@ -1,0 +1,39 @@
+{
+  "name": "uni-response",
+  "description": "A simple utility to create unified response objects for APIs.",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsup"
+  },
+  "keywords": [
+    "response",
+    "api",
+    "utility",
+    "typescript"
+  ],
+  "author": "Sushant Rahate <sushantrahate15@gmail.com> (https://github.com/sushantrahate)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sushantrahate/uni-response.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sushantrahate/uni-response/issues"
+  },
+  "homepage": "https://github.com/sushantrahate/uni-response#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
