@@ -17,6 +17,8 @@ A Simple Utility to Create Unified Response Objects for APIs. Allowing for Easy 
 - Automatically includes a timestamp for - logging and tracking.
 - Supports both successful and error responses.
 
+## [Live Demo](https://codesandbox.io/p/devbox/pedantic-paper-hm5q29?file=%2Findex.ts%3A14%2C1)
+
 ## Installation
 
 ```bash
