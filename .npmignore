@@ -6,6 +6,7 @@ tests/
 
 tsconfig.json
 tsup.config.ts
+vitest.config.ts
 
 *.log
 .env
