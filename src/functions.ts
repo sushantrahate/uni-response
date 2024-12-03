@@ -1,4 +1,4 @@
-import { Response } from './types';
+import { ResponseType } from './types';
 
 /**
  * Creates a unified response object for API responses.
@@ -20,8 +20,8 @@ export function unifiedResponse<T = Record<string, unknown>>(
   error: object | null = null,
   metadata: object | null = null,
   extraFields: T = {} as T
-): Response<T> {
-  const response: Response<T> = {
+): ResponseType<T> {
+  const response: ResponseType<T> = {
     success,
     message,
     timestamp: new Date().toISOString(),

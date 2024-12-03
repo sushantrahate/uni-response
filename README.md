@@ -25,8 +25,16 @@ npm install uni-response
 ```js
 import { unifiedResponse } from 'uni-response';
 
-const response = unifiedResponse(true, 'Success', { id: 1 });
+const response = unifiedResponse(true, 'Request was successful', { id: 1 });
 console.log(response);
+/*
+{
+  success: true,
+  message: "Request was successful",
+  data: { id: 1 },
+  timestamp: "..."
+}
+*/
 ```
 
 ```js
@@ -55,6 +63,19 @@ const responseWithCustomFields =
 
 // Output
 console.log(responseWithCustomFields);
+/*
+{
+  success: true,
+  message: "Request was successful",
+  data: { user: 'Jane Doe' },
+  timestamp: "..."
+  extraFields: {
+    customField1: 'Custom Data 1',
+    customField2: 42,
+    customField3: true,
+  }
+}
+*/
 ```
 
 ## Response Structure
@@ -62,10 +83,10 @@ console.log(responseWithCustomFields);
 ```js
 interface Response<T = Record<string, unknown>> {
   success: boolean;
-  data: object | null;
   message: string;
-  error: object | null;
-  metadata: object | null;
+  data?: object | null;
+  error?: object | null;
+  metadata?: object | null;
   timestamp: string;
   extraFields?: T; // Generic type for extra fields
 }
