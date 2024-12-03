@@ -1,4 +1,4 @@
-export type Response<T = Record<string, unknown>> = {
+export type ResponseType<T = Record<string, unknown>> = {
   /** Indicates if the request was successful */
   success: boolean;
 
