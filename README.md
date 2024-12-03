@@ -1,4 +1,5 @@
 <div align="center">
+  <a href="https://github.com/sushantrahate/uni-response"><img src="https://img.shields.io/github/actions/workflow/status/sushantrahate/uni-response/publish.yml" alt="Build" /></a>
   <a href="https://www.npmjs.com/package/uni-response"><img src="https://img.shields.io/npm/v/uni-response?maxAge=3600" alt="npm version" /></a>
   <a href="https://www.npmjs.com/package/uni-response"><img src="https://img.shields.io/npm/dt/uni-response?maxAge=3600" alt="npm downloads" /></a>
    <a href="https://www.npmjs.com/package/uni-response"><img src="https://img.shields.io/bundlephobia/minzip/uni-response" alt="Package size" /></a>
