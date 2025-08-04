@@ -101,3 +101,5 @@ MIT License
 ## Author
 
 [Sushant Rahate](https://github.com/sushantrahate) ([sushantrahate15@gmail.com](mailto:sushantrahate15@gmail.com))
+
+If you liked it then please show your love by ⭐ the repo
