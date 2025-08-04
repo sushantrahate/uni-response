@@ -94,6 +94,10 @@ interface Response<T = Record<string, unknown>> {
 }
 ```
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a history of changes and new features.
+
 ## License
 
 MIT License

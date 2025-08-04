@@ -10,7 +10,8 @@
     "import": "./dist/index.mjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "vitest",
