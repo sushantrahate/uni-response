@@ -14,9 +14,6 @@ export type ResponseType<T = Record<string, unknown>> = {
   /** Additional metadata related to the response */
   metadata?: object | null;
 
-  /** ISO timestamp of when the response was created */
-  timestamp: string;
-
   /** Optional additional custom fields */
   extraFields?: T;
 };

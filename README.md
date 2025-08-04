@@ -37,7 +37,6 @@ console.log(response);
   success: true,
   message: "Request was successful",
   data: { id: 1 },
-  timestamp: "..."
 }
 */
 ```
@@ -73,7 +72,6 @@ console.log(responseWithCustomFields);
   success: true,
   message: "Request was successful",
   data: { user: 'Jane Doe' },
-  timestamp: "..."
   extraFields: {
     customField1: 'Custom Data 1',
     customField2: 42,
@@ -92,7 +90,6 @@ interface Response<T = Record<string, unknown>> {
   data?: object | null;
   error?: object | null;
   metadata?: object | null;
-  timestamp: string;
   extraFields?: T; // Generic type for extra fields
 }
 ```

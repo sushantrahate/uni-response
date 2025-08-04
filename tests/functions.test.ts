@@ -10,7 +10,6 @@ describe('unifiedResponse', () => {
       success: true,
       message: 'Success',
       data: { id: 1 },
-      timestamp: expect.any(String),
     };
 
     expect(result).toMatchObject(expected);
@@ -25,7 +24,6 @@ describe('unifiedResponse', () => {
       success: false,
       message: 'An error occurred',
       error: { code: 400 },
-      timestamp: expect.any(String),
     };
 
     expect(result).toMatchObject(expected);
@@ -46,7 +44,6 @@ describe('unifiedResponse', () => {
       success: true,
       message: 'With custom fields',
       extraFields: customFields,
-      timestamp: expect.any(String),
     };
 
     expect(result).toMatchObject(expected);

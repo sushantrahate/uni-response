@@ -24,7 +24,6 @@ export function unifiedResponse<T = Record<string, unknown>>(
   const response: ResponseType<T> = {
     success,
     message,
-    timestamp: new Date().toISOString(),
   };
 
   if (data !== null && data !== undefined) response.data = data;
