@@ -8,6 +8,10 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # Added permissions for OIDC (Required for modern npm security features)
+    permissions:
+      contents: read
+      id-token: write 
 
     steps:
       - name: Checkout
@@ -30,6 +34,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Publish to npm
-        run: npm publish
+        # Added --provenance flag for security and --access public for clarity
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
