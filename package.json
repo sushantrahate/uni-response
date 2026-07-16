@@ -16,6 +16,7 @@
   "scripts": {
     "test": "vitest",
     "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "build": "tsup"
   },
   "keywords": [
@@ -27,11 +28,11 @@
   "author": "Sushant Rahate <sushantrahate15@gmail.com> (https://github.com/sushantrahate)",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.10.1",
-    "@vitest/ui": "^3.2.4",
+    "@vitest/coverage-v8": "^4.1.10",
+    "@vitest/ui": "^4.1.10",
     "tsup": "^8.3.5",
-    "typescript": "^5.7.2",
-    "vitest": "^3.2.4"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
   },
   "repository": {
     "type": "git",

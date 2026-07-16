@@ -49,6 +49,25 @@ describe('unifiedResponse', () => {
     expect(result).toMatchObject(expected);
   });
 
+  it('should include metadata when provided', () => {
+    const metadata = { page: 1, totalPages: 5 };
+    const result = unifiedResponse(
+      true,
+      'With metadata',
+      null,
+      null,
+      metadata
+    );
+
+    const expected: ResponseType = {
+      success: true,
+      message: 'With metadata',
+      metadata,
+    };
+
+    expect(result).toMatchObject(expected);
+  });
+
   it('should default message based on success', () => {
     const successResponse = unifiedResponse(true);
     expect(successResponse.message).toBe('Request was successful');
