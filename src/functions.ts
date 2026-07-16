@@ -26,9 +26,9 @@ export function unifiedResponse<T = Record<string, unknown>>(
     message,
   };
 
-  if (data !== null && data !== undefined) response.data = data;
-  if (error) response.error = error;
-  if (metadata) response.metadata = metadata;
+  if (data !== null) response.data = data;
+  if (error !== null) response.error = error;
+  if (metadata !== null) response.metadata = metadata;
   if (extraFields && Object.keys(extraFields).length > 0)
     response.extraFields = extraFields;
 

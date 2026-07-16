@@ -14,7 +14,6 @@ A Simple Utility to Create Unified Response Objects for APIs. Allowing for Easy 
 
 - Unified response format for all API calls.
 - Flexible to include additional custom fields.
-- Automatically includes a timestamp for - logging and tracking.
 - Supports both successful and error responses.
 
 ## <a href="https://codesandbox.io/p/devbox/pedantic-paper-hm5q29?file=%2Findex.ts%3A14%2C1" target="_blank">Live Demo</a>
@@ -51,10 +50,8 @@ interface CustomResponseFields {
 }
 
 // Creating a response with custom fields
-const responseWithCustomFields =
-  unifiedResponse <
-  CustomResponseFields >
-  (true,
+const responseWithCustomFields = unifiedResponse<CustomResponseFields>(
+  true,
   'Request was successful',
   { user: 'Jane Doe' },
   null,
@@ -63,7 +60,8 @@ const responseWithCustomFields =
     customField1: 'Custom Data 1',
     customField2: 42,
     customField3: true,
-  });
+  }
+);
 
 // Output
 console.log(responseWithCustomFields);
@@ -84,7 +82,7 @@ console.log(responseWithCustomFields);
 ## Response Structure
 
 ```js
-interface Response<T = Record<string, unknown>> {
+interface ResponseType<T = Record<string, unknown>> {
   success: boolean;
   message: string;
   data?: object | null;
@@ -97,6 +95,10 @@ interface Response<T = Record<string, unknown>> {
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a history of changes and new features.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local setup and how to submit changes.
 
 ## License
 
