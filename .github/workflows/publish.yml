@@ -34,8 +34,10 @@ jobs:
         run: npm run build --if-present
 
       # Trusted Publishing (OIDC) requires npm 11.5.0+; Node 20's bundled npm may be older.
+      # Pinned to the npm 11.x line (not "latest") since npm 12+ requires Node 22.22.2+/24.15.0+/26+,
+      # newer than the Node 20 this workflow runs on.
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
 
       - name: Publish to npm
         # No NPM_TOKEN needed: authenticates via GitHub OIDC against the
